@@ -1,40 +1,36 @@
-title = "chringel - Privacy focused theme for Hugo"
+title = "Berkcan Kapusuzoglu"
 languageCode = "en-us"
-baseurl = "https://chringel21.github.io/chringel-hugo-theme"
-theme = "chringel-hugo-theme"
-themesDir = "../.."
+baseurl = "https://kapusuzoglu.github.io/"
+theme = "blogTheme"
+# themesDir = "../.."
 
-author = "Christian Engel"
-copyright = "Copyright © 2022, Christian Engel, all rights reserved."
+author = "Berkcan Kapusuzoglu"
+copyright = "Copyright © 2023, Berkcan Kapusuzoglu, all rights reserved."
 
 pluralizelisttitles = false
 paginate = 10
 enableEmoji = true
 
-RelativeURLs = true
-CanonifyURLs = true
-
 [Params]
-    name = "chringel"
-    description = "A privacy focused theme for Hugo"
+    name = "Berkcan Kapusuzoglu"
+    description = "Berkcan Kapusuzoglu"
 
-    github_user = "chringel21"
-    github_repo = "https://github.com/chringel21/chringel-hugo-theme"
+    github_user = "kapusuzoglu"
+    github_repo = "https://github.com/kapusuzoglu/kapusuzoglu.github.io"
     github_banner = true
 
     favicon = "favicon.ico"
 
     # Title to be displayed in header
-    headerTitle = 'chringel@dev: ~/$'
+    headerTitle = 'kapusuzoglu@dev: ~/$'
     # User image
-    titleImage = 'images/index.png'
-    # Copyright text displayed in footer, Markdown allowed
-    footerCopyrightText = 'Christian Engel 2022'
-    # Show 'Previous Post/Next Post' navigation (defaults to true)
-    showPrevNextPostNavigation = true
+    titleImage = 'images/BK_Wedding.jpg'
+    # Copyright text displayed in footer
+    footerCopyrightText = 'Berkcan Kapusuzoglu 2023'
 
 # Favicons config
 # Get your favicons from https://realfavicongenerator.net/
+# Put them in the 'static' folder
 [Params.favicons]
   appleTouchIcon = '/apple-touch-icon.png'
   icon32 = '/favicon-32x32.png'
@@ -59,43 +55,54 @@ CanonifyURLs = true
   avatar-bg = "#f0f0f0"
   jsLocation = "https://comments.example.com/js/embed.min.js"
 
-# Umami configuration
-# https://umami.is/docs/install
-[Params.umami]
-  enabled = true
-  websiteId = "1234567-abcd-efgh-0000-abcdefg1234"
-  jsLocation = "https://analytics.example.com/umami.js"
+# # Umami configuration
+# # https://umami.is/docs/install
+# [Params.umami]
+#   enabled = true
+#   websiteId = "1234567-abcd-efgh-0000-abcdefg1234"
+#   jsLocation = "https://analytics.example.com/umami.js"
 
-# h-card configuration
-# fullName is mandatory
-  [Params.hcard]
-  avatar = "images/index.png"
-  fullName = "Christian Engel"
+# microformat2 h-card configuration
+# All params except 'fullName' are optional
+[Params.hcard]
+#   avatar = "/images/BK_Wedding.jpg"
+  fullName = "Berkcan Kapusuzoglu"
   pronouns = [ "he", "him" ]
-  nickname = "chringel"
+  nickname = "beco"
   showLocation = true
-  city = "Potsdam"
-  region = "Brandenburg"
-  country = "Germany"
+  city = "My Town"
+  region = "My State"
+  country = "My Country"
 
-# IndieWeb authorization endpoints
 [Params.indieweb]
   authorizationEndpoint = "https://indieauth.com/auth"
   tokenEndpoint = "https://tokens.indieauth.com/token"
 
 [Params.webmention]
   webmentionUrl = "https://webmention.io"
-  webmentionEndpoint = "/example.com/webmention"
-  webmentionPingbackEndpoint = "/example.com/xmlrpc"
+  webmentionEndpoint = "/webmention"
+  webmentionPingbackEndpoint = "/xmlrcp"
 
 # Social icons to be displayed on the front page
 [[menu.social]]
   name = "GitHub"
-  url = "https://github.com/chringel21"
+  url = "https://github.com/kapusuzoglu"
 
 [[menu.social]]
   name = "Twitter"
-  url = "https://twitter.com/DeEgge"
+  url = "https://twitter.com/Berkcan_K"
+
+[[menu.social]]
+  name = "Linkedin"
+  url = "https://www.linkedin.com/in/berkcankapusuzoglu/"
+
+[[menu.social]]
+  name = "Google"
+  url = "https://scholar.google.com/citations?user=iv1vNTYAAAAJ&hl=en"
+
+# [[menu.social]]
+#   name = "RSS"
+#   url = "https://scholar.google.com/citations?user=iv1vNTYAAAAJ&hl=en"
 
 # To make purging of CSS classes work in production
 [build]

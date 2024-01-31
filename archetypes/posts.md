@@ -1,22 +1,22 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-author: Me
+author: Berkcan Kapusuzoglu
 type: post
 date:  {{ .Date }}
 cover: 
   src: feature.jpg
   caption: Title image caption
-draft: true
+draft: false
 categories:
   - A
   - B
   - C
 tags:
-  - Hugo
-  - Game Development
-  - Internet of Things (IoT)
-  - Linux
-  - ...
+  - AI
+  - Deep Learning
+  - Machine Learning
+  - Large Language Models
+  - Personal Development
 description: xxx
 ---
 
@@ -24,4 +24,4 @@ CONTENT
 
 &nbsp;
 
-Source: xyz
+Source: Posts

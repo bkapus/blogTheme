@@ -24,7 +24,8 @@
       class="flex items-center text-gray-700 dark:text-gray-200 font-mono font-bold"
     >
       {{ .Site.Params.headerTitle }}
-      <span class="animate-blink font-mono font-bold">|</span>
+      <!-- <span class="animate-blink font-mono font-bold">|</span> -->
+      <span class="font-mono font-bold"></span>
     </a>
 
     <input id="nav-toggle" type="checkbox" class="hidden" />
@@ -69,7 +70,7 @@
           <a
             href="{{ .Permalink }}"
             class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
-            >/{{ .Title }}</a
+            >{{ .Title }}</a
           >
         </li>
       {{ end }}
@@ -78,28 +79,48 @@
           <a
             href="{{ .Permalink }}"
             class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
-            >/{{ .Title }}</a
+            >{{ .Title }}</a
           >
         </li>
       {{ end }}
-      {{ range .Site.Sections }}
+      {{ with .Site.GetPage "/publications" }}
         <li>
           <a
             href="{{ .Permalink }}"
             class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
-            >/{{ .Title }}</a
+            >{{ .Title }}</a
           >
         </li>
       {{ end }}
+      {{ with .Site.GetPage "/categories" }}
+      <li>
+        <a
+          href="{{ .Permalink }}"
+          class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+        >
+          Blog
+        </a>
+      </li>
+      {{ end }}
+      <!-- {{ range .Site.Sections }}
+        <li>
+          <a
+            href="{{ .Permalink }}"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >{{ .Title }}</a
+          >
+        </li>
+      {{ end }} -->
       {{ with .Site.GetPage "/archive" }}
         <li>
           <a
             href="{{ .Permalink }}"
             class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
-            >/{{ .Title }}</a
+            >{{ .Title }}</a
           >
         </li>
       {{ end }}
+      {{ partial "toggle.html" . }}
     </ul>
   </nav>
 </header>

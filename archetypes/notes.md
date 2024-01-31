@@ -1,15 +1,16 @@
 ---
-author: Me
+author: Berkcan Kapusuzoglu
 type: note
 date: {{ .Date }}
 draft: true
 categories:
   - Notes
 tags:
-  - Hugo
-  - Game Development
-  - Internet of Things (IoT)
-  - Linux
+  - AI
+  - Deep Learning
+  - Machine Learning
+  - Large Language Models
+  - Personal Development
 description: Just a note
 # bridgy:
 #   - twitter

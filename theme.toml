@@ -1,18 +1,18 @@
-name = "chringel"
+name = "bk"
 license = "MIT"
-licenselink = "https://github.com/chringel21/chringel-hugo-theme/blob/main/LICENSE"
-description = "chringel - Privacy focused theme for Hugo using TailwindCSS"
+licenselink = "https://github.com/kapusuzoglu/blogTheme/blob/main/LICENSE"
+description = "BK - Privacy focused theme for Hugo using TailwindCSS"
 
-homepage = "https://github.com/chringel21/chringel-hugo-theme"
+homepage = "https://github.com/kapusuzoglu/blogTheme"
 
-demosite = "https://chringel.dev"
+demosite = "https://kapusuzoglu.github.io"
 
-tags = ["Blog", "Hugo", "Tailwind CSS", "theme", "privacy"]
+tags = ["Blog", "AI", "Machine Learning", "Deep Learning", "Personal development", "Large Language Models"]
 features = ["Isso comments", "umami analytics", "SVG icons", "automatic dark mode", "deeplinks"]
 
 [author]
-  name = "Christian Engel"
-  homepage = "https://github.com/chringel21/"
+  name = "Berkcan Kapusuzoglu"
+  homepage = "https://github.com/kapusuzoglu/"
 
 [original]
   author = "Dirk Olbrich"

@@ -7,11 +7,14 @@
   h4,
   h5,
   h6 {
-    @apply font-headline relative;
+    @apply font-headline relative text-black dark:text-gray-100;
   }
 
-  .prose a {
+  /* .prose a {
     @apply transition-colors duration-200 hover:no-underline hover:transition-colors hover:duration-200;
+  } */
+  .prose a {
+    @apply transition-colors duration-200 hover:no-underline hover:transition-colors hover:duration-200 text-black dark:text-gray-100;
   }
 
   .prose a:hover {
@@ -63,7 +66,7 @@
     @apply bg-gray-200 dark:bg-gray-500 rounded-md p-1 font-light;
   }
   body {
-    @apply font-body;
+    @apply font-body text-black dark:text-gray-100;
   }
 
   .no-prose li::before {

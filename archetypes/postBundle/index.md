@@ -1,23 +1,24 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-author: Me
+author: Berkcan Kapusuzoglu
 type: post
 date:  {{ .Date }}
 # optional
 lastmod: {{ .Date }}
 cover:
-  src: feature.jpg
+  src: images/feature.jpg
   caption: Title image caption *Markdown* **supported**
-draft: true
+draft: false
 categories:
   - A
   - B
   - C
 tags:
-  - Hugo
-  - Game Development
-  - Internet of Things (IoT)
-  - Linux
+  - AI
+  - Deep Learning
+  - Machine Learning
+  - Large Language Models
+  - Personal Development
 description: Read this interesting post, it's totally worth it.
 ---
 

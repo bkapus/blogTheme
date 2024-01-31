@@ -1,7 +1,7 @@
 ---
-author: Christian Engel
+author: Berkcan Kapusuzoglu
 title: Hi, and welcome.
-date: 2021-12-09
+date: 2023-11-22
 ---
 
-Put your thougths in one place.
+Squeeze Wisdom.
